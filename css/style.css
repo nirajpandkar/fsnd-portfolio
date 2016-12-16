@@ -24,5 +24,24 @@ hr{
 
 .title-logo{
     margin-top:20px;
+    width:25%;
+    height:25%;
 }
 
+@media screen and (min-width: 445px) and (max-width: 990px){
+    .project-center{
+        width:400px;
+        margin:auto;
+    }
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 991px){
+    .title-logo{
+        margin:auto;
+    }
+
+    .title-center{
+        text-align:center
+    }
+}
