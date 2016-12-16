@@ -7,6 +7,8 @@
     <title>My portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -41,11 +43,15 @@
             </div>
 
         </div>
+
+        <!--Down arrow button transition-->
         <div class="row">
             <div class="col-md-12">
                 <a href="#featured"><img class="img-responsive" src="Images/down-button.svg" style="height:100px;width:100px;margin:auto" alt="Udacity Logo"></a>
             </div>
         </div>
+
+        <!-- Projects-->
         <div id="section-2" class="row">
             <div class="col-md-12">
                 <h2 id="featured" class="text-muted sub-title">Featured Work</h2>
@@ -55,7 +61,9 @@
         <div class="row text-center">
             <div class="col-lg-4 col-md-6 project-center">
                 <figure>
-                    <img class="img-responsive img-thumbnail" src="Images/Avenue.png" alt="Multi-User Blog Screenshot">
+                    <a href="#project-1" data-toggle="modal">
+                        <img class="img-responsive img-thumbnail" src="Images/Avenue.png" alt="Multi-User Blog Screenshot">
+                    </a>
                     <figcaption>
                         <h3 class="text-uppercase text-thick">Multi-User Blog</h3>
                         <h6>https://github.com/nirajpandkar/multiuser-blog</h6>
@@ -65,7 +73,9 @@
 
             <div class="col-lg-4 col-md-6 project-center">
                 <figure>
-                    <img class="img-responsive img-thumbnail" src="Images/git-tip-cli.png" alt="Git-Tip CLI Screenshot">
+                    <a href="#project-2" data-toggle="modal">
+                        <img class="img-responsive img-thumbnail" src="Images/git-tip-cli.png" alt="Git-Tip CLI Screenshot">
+                    </a>
                     <figcaption>
                         <h3 class="text-uppercase text-thick">Git-Tip CLI</h3>
                         <h6>https://github.com/nirajpandkar/git-tip</h6>
@@ -75,7 +85,9 @@
 
             <div class="col-lg-4 col-md-6 project-center">
                 <figure>
-                    <img class="img-responsive img-thumbnail" src="Images/ParkingWebApp.png" alt="Parking Capacity Management Webapp Screenshot">
+                    <a href="#project-3" data-toggle="modal">
+                        <img class="img-responsive img-thumbnail" src="Images/ParkingWebApp.png" alt="Parking Capacity Management Webapp Screenshot">
+                    </a>
                     <figcaption>
                         <h3 class="text-uppercase text-thick">Parking Capacity Management Web-App</h3>
                         <h6>https://github.com/nirajpandkar/InfyTechZooka-2-parking-webapp</h6>
@@ -85,7 +97,9 @@
 
             <div class="col-lg-4 col-md-6 project-center">
                 <figure>
-                    <img class="img-responsive img-thumbnail" src="Images/Thoughts.png" alt="Thought-of-the-day Chrome Extension Screenshot">
+                    <a href="#project-4" data-toggle="modal">
+                        <img class="img-responsive img-thumbnail" src="Images/Thoughts.png" alt="Thought-of-the-day Chrome Extension Screenshot">
+                    </a>
                     <figcaption>
                         <h3 class="text-uppercase text-thick">Thought-of-the-day Chrome Extension</h3>
                         <h6>https://github.com/nirajpandkar/thoughts-chrome-extension</h6>
@@ -95,7 +109,9 @@
 
             <div class="col-lg-4 col-md-6 project-center">
                 <figure>
-                    <img class="img-responsive img-thumbnail" src="Images/MovieTrailer.png" alt="Movie Trailer Website Screenshot">
+                    <a href="#project-5" data-toggle="modal">
+                        <img class="img-responsive img-thumbnail" src="Images/MovieTrailer.png" alt="Movie Trailer Website Screenshot">
+                    </a>
                     <figcaption>
                         <h3 class="text-uppercase text-thick">Movie Trailer Website</h3>
                         <h6>https://github.com/udacity/project5</h6>
@@ -105,7 +121,9 @@
 
             <div class="col-lg-4 col-md-6 project-center">
                 <figure>
-                    <img class="img-responsive img-thumbnail" src="Images/C-Cube.png" alt="Portfolio Screenshot">
+                    <a href="#project-6" data-toggle="modal">
+                        <img class="img-responsive img-thumbnail" src="Images/C-Cube.png" alt="C-CubeClub Screenshot">
+                    </a>
                     <figcaption>
                         <h3 class="text-uppercase text-thick">C-CubeClub</h3>
                         <h6>https://github.com/nirajpandkar/CCube</h6>
@@ -114,9 +132,143 @@
             </div>
         </div>
 
+        <!-- Modals -->
+        <div id="Modals">
+            <div id="project-1" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title text-center sub-title">Multi-User Blog</h4>
+                        </div>
+                        <div class="modal-body">
+                            <figure>
+                                <img class="img-responsive img-thumbnail" src="Images/Avenue.png" alt="Multi-User Blog Screenshot">                                <figcaption class="text-center">
+                                    <p><b>What I learnt:</b>Python PEP8 standard, Jinja templating, User Authentication, DB Handling, Security</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="modal-footer">
+                            <p class="text-center">Blogging Web-App with multi-user posts.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="project-2" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title text-center sub-title">Git-tip CLI</h4>
+                        </div>
+                        <div class="modal-body">
+                            <figure>
+                                <img class="img-responsive img-thumbnail" src="Images/git-tip-cli.png" alt="Git-Tip CLI Screenshot">                                <figcaption class="text-center">
+                                <p><b>What I learnt:</b>Javascript interfacing for shell/terminal, Distribution with NPM</p>
+                            </figcaption>
+                            </figure>
+                        </div>
+                        <div class="modal-footer">
+                            <p class="text-center">Provides git-tips in your terminal every time a new terminal opens.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="project-3" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title text-center sub-title">Parking Capacity Management Web-App</h4>
+                        </div>
+                        <div class="modal-body">
+                            <figure>
+                                <img class="img-responsive img-thumbnail" src="Images/ParkingWebApp.png" alt="Parking Capacity Management Webapp Screenshot">                                <figcaption class="text-center">
+                                <p><b>What I learnt:</b>Firebase real time database, Semantic UI frontend, Jquery, Integration with sensors</p>
+                            </figcaption>
+                            </figure>
+                        </div>
+                        <div class="modal-footer">
+                            <p class="text-center">A real time, responsive web app for parking capacity management.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="project-4" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title text-center sub-title">Thought-of-the-day Chrome Extension</h4>
+                        </div>
+                        <div class="modal-body">
+                            <figure>
+                                <img class="img-responsive img-thumbnail" src="Images/Thoughts.png" alt="Thought-of-the-day Chrome Extension Screenshot">                                <figcaption class="text-center">
+                                <p><b>What I learnt:</b>Continuous Integration, Git, Explored chrome capabilities extensively</p>
+                            </figcaption>
+                            </figure>
+                        </div>
+                        <div class="modal-footer">
+                            <p class="text-center">Provides with new thoughts every time you open a new tab</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="project-5" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title text-center sub-title">Movie Trailer Website</h4>
+                        </div>
+                        <div class="modal-body">
+                            <figure>
+                                <img class="img-responsive img-thumbnail" src="Images/MovieTrailer.png" alt="Movie Trailer Website Screenshot">                                <figcaption class="text-center">
+                                <p><b>What I learnt:</b>Python PEP8 standard, Applying CSS3 animations, API usage</p>
+                            </figcaption>
+                            </figure>
+                        </div>
+                        <div class="modal-footer">
+                            <p class="text-center">Provides details of the movies extracted from IMDB.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="project-6" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title text-center sub-title">C-CubeClub</h4>
+                        </div>
+                        <div class="modal-body">
+                            <figure>
+                                <img class="img-responsive img-thumbnail" src="Images/C-Cube.png" alt="C-CubeClub Screenshot">
+                                <figcaption class="text-center">
+                                    <p><b>What I learnt:</b>HTML,CSS</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="modal-footer">
+                            <p class="text-center">A static website for Rubik's cube community!</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
     </div>
-
-
-<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
