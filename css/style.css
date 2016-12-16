@@ -35,10 +35,18 @@ hr{
     }
 }
 
-
+@media screen and (min-width: 990px){
+    .title-center{
+        text-align:right;
+    }
+}
 @media screen and (min-width: 300px) and (max-width: 991px){
     .title-logo{
         margin:auto;
+    }
+
+    .feature-center{
+        text-align:center
     }
 
     .title-center{
