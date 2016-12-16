@@ -10,6 +10,10 @@ hr{
     height:4px;
 }
 
+p{
+    font-size:25px;
+
+}
 .text-muted{
     color: #7d97ad;
 }
@@ -28,6 +32,20 @@ hr{
     height:25%;
 }
 
+.goodFonts{
+    line-height:1.5em;
+    font-size:18px;
+}
+
+.profile-picture{
+    width:65%;
+    height:65%;
+    margin:auto;
+}
+
+.sub-title{
+    font-size: 50px;
+}
 @media screen and (min-width: 445px) and (max-width: 990px){
     .project-center{
         width:400px;
@@ -45,11 +63,16 @@ hr{
         margin:auto;
     }
 
-    .feature-center{
-        text-align:center
+    .sub-title{
+        text-align:center;
+        font-size:40px
     }
 
     .title-center{
         text-align:center
     }
+}
+
+@media screen and (min-width: 760px) and (max-width: 991px){
+    .col-md-6
 }
