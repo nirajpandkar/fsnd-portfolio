@@ -5,11 +5,488 @@
     <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style type="text/css">
+        @font-face {
+          font-family: 'Lato';
+          font-style: normal;
+          font-weight: 100;
+          src: local('Lato Hairline'), local('Lato-Hairline'), url(https://fonts.gstatic.com/s/lato/v11/zJY4gsxBiSo5L7tNutxFNg.ttf) format('truetype');
+        }
+
+        @font-face {
+          font-family: 'Lato';
+          font-style: normal;
+          font-weight: 300;
+          src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v11/nj47mAZe0mYUIySgfn0wpQ.ttf) format('truetype');
+        }
+
+        @font-face {
+          font-family: 'Lato';
+          font-style: normal;
+          font-weight: 400;
+          src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/v0SdcGFAl2aezM9Vq_aFTQ.ttf) format('truetype');
+        }
+
+        html {
+          font-family: sans-serif;
+          -webkit-text-size-adjust: 100%;
+          -ms-text-size-adjust: 100%;
+        }
+
+        body {
+          margin: 0;
+        }
+
+        figcaption,
+        figure,
+        header,
+        section {
+          display: block;
+        }
+
+        a {
+          background-color: transparent;
+        }
+
+        b {
+          font-weight: 700;
+        }
+
+        h1 {
+          margin: .67em 0;
+          font-size: 2em;
+        }
+
+        img {
+          border: 0;
+        }
+
+        figure {
+          margin: 1em 40px;
+        }
+
+        hr {
+          height: 0;
+          -webkit-box-sizing: content-box;
+          -moz-box-sizing: content-box;
+          box-sizing: content-box;
+        }
+
+        button {
+          margin: 0;
+          font: inherit;
+          color: inherit;
+        }
+
+        button {
+          overflow: visible;
+        }
+
+        button {
+          text-transform: none;
+        }
+
+        button {
+          -webkit-appearance: button;
+        }
+
+        button::-moz-focus-inner {
+          padding: 0;
+          border: 0;
+        }
+
+        * {
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+
+        :after,
+        :before {
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+
+        html {
+          font-size: 10px;
+        }
+
+        body {
+          font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+          font-size: 14px;
+          line-height: 1.42857143;
+          color: #333;
+          background-color: #fff;
+        }
+
+        button {
+          font-family: inherit;
+          font-size: inherit;
+          line-height: inherit;
+        }
+
+        a {
+          color: #337ab7;
+          text-decoration: none;
+        }
+
+        figure {
+          margin: 0;
+        }
+
+        img {
+          vertical-align: middle;
+        }
+
+        .img-responsive {
+          display: block;
+          max-width: 100%;
+          height: auto;
+        }
+
+        .img-thumbnail {
+          display: inline-block;
+          max-width: 100%;
+          height: auto;
+          padding: 4px;
+          line-height: 1.42857143;
+          background-color: #fff;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+        }
+
+        hr {
+          margin-top: 20px;
+          margin-bottom: 20px;
+          border: 0;
+          border-top: 1px solid #eee;
+        }
+
+        h1,
+        h2,
+        h4 {
+          font-family: inherit;
+          font-weight: 500;
+          line-height: 1.1;
+          color: inherit;
+        }
+
+        h1,
+        h2 {
+          margin-top: 20px;
+          margin-bottom: 10px;
+        }
+
+        h4 {
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+
+        h1 {
+          font-size: 36px;
+        }
+
+        h2 {
+          font-size: 30px;
+        }
+
+        h4 {
+          font-size: 18px;
+        }
+
+        p {
+          margin: 0 0 10px;
+        }
+
+        .text-center {
+          text-align: center;
+        }
+
+        .text-uppercase {
+          text-transform: uppercase;
+        }
+
+        .text-muted {
+          color: #777;
+        }
+
+        .container {
+          padding-right: 15px;
+          padding-left: 15px;
+          margin-right: auto;
+          margin-left: auto;
+        }
+
+        @media (min-width:768px) {
+          .container {
+            width: 750px;
+          }
+        }
+
+        @media (min-width:992px) {
+          .container {
+            width: 970px;
+          }
+        }
+
+        @media (min-width:1200px) {
+          .container {
+            width: 1170px;
+          }
+        }
+
+        .row {
+          margin-right: -15px;
+          margin-left: -15px;
+        }
+
+        .col-lg-4,
+        .col-lg-6,
+        .col-md-12,
+        .col-md-6 {
+          position: relative;
+          min-height: 1px;
+          padding-right: 15px;
+          padding-left: 15px;
+        }
+
+        @media (min-width:992px) {
+          .col-md-12,
+          .col-md-6 {
+            float: left;
+          }
+
+          .col-md-12 {
+            width: 100%;
+          }
+
+          .col-md-6 {
+            width: 50%;
+          }
+        }
+
+        @media (min-width:1200px) {
+          .col-lg-4,
+          .col-lg-6 {
+            float: left;
+          }
+
+          .col-lg-6 {
+            width: 50%;
+          }
+
+          .col-lg-4 {
+            width: 33.33333333%;
+          }
+        }
+
+        .fade {
+          opacity: 0;
+        }
+
+        .close {
+          float: right;
+          font-size: 21px;
+          font-weight: 700;
+          line-height: 1;
+          color: #000;
+          text-shadow: 0 1px 0 #fff;
+          filter: alpha(opacity=20);
+          opacity: .2;
+        }
+
+        button.close {
+          -webkit-appearance: none;
+          padding: 0;
+          background: 0 0;
+          border: 0;
+        }
+
+        .modal {
+          position: fixed;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          z-index: 1050;
+          display: none;
+          overflow: hidden;
+          -webkit-overflow-scrolling: touch;
+          outline: 0;
+        }
+
+        .modal.fade .modal-dialog {
+          -webkit-transform: translate(0,-25%);
+          -ms-transform: translate(0,-25%);
+          -o-transform: translate(0,-25%);
+          transform: translate(0,-25%);
+        }
+
+        .modal-dialog {
+          position: relative;
+          width: auto;
+          margin: 10px;
+        }
+
+        .modal-content {
+          position: relative;
+          background-color: #fff;
+          -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+          border: 1px solid #999;
+          border: 1px solid rgba(0,0,0,.2);
+          border-radius: 6px;
+          outline: 0;
+          -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+          box-shadow: 0 3px 9px rgba(0,0,0,.5);
+        }
+
+        .modal-header {
+          padding: 15px;
+          border-bottom: 1px solid #e5e5e5;
+        }
+
+        .modal-header .close {
+          margin-top: -2px;
+        }
+
+        .modal-title {
+          margin: 0;
+          line-height: 1.42857143;
+        }
+
+        .modal-body {
+          position: relative;
+          padding: 15px;
+        }
+
+        .modal-footer {
+          padding: 15px;
+          text-align: right;
+          border-top: 1px solid #e5e5e5;
+        }
+
+        @media (min-width:768px) {
+          .modal-dialog {
+            width: 600px;
+            margin: 30px auto;
+          }
+
+          .modal-content {
+            -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+            box-shadow: 0 5px 15px rgba(0,0,0,.5);
+          }
+        }
+
+        .container:after,
+        .container:before,
+        .modal-footer:after,
+        .modal-footer:before,
+        .modal-header:after,
+        .modal-header:before,
+        .row:after,
+        .row:before {
+          display: table;
+          content: " ";
+        }
+
+        .container:after,
+        .modal-footer:after,
+        .modal-header:after,
+        .row:after {
+          clear: both;
+        }
+
+        @-ms-viewport {
+          width: device-width;
+        }
+
+        body {
+          font-family: 'Lato', sans-serif;
+          color: #2d3c49;
+          font-weight: 300;
+        }
+
+        hr {
+          border: none;
+          background-color: #7d97ad;
+          height: 4px;
+        }
+
+        p {
+          font-size: 25px;
+        }
+
+        .text-muted {
+          color: #7d97ad;
+        }
+
+        .text-thin {
+          font-weight: 100;
+        }
+
+        .title-main {
+          font-size: 60px;
+        }
+
+        .title-logo {
+          margin: 20px 0 0 0;
+          width: 25%;
+          height: 25%;
+        }
+
+        .goodFonts {
+          line-height: 1.5em;
+          font-size: 18px;
+        }
+
+        .profile-picture {
+          width: 65%;
+          height: 65%;
+          margin: auto;
+        }
+
+        .sub-title {
+          font-size: 50px;
+          margin: 85px 0 0 0;
+        }
+
+        .project-center {
+          margin: 60px 0 0 0;
+        }
+
+        @media screen and (min-width: 990px) {
+          .title-center {
+            text-align: right;
+          }
+        }
+
+        @media screen and (min-width: 300px) and (max-width: 991px) {
+          .title-logo {
+            margin: auto;
+          }
+
+          .sub-title {
+            text-align: center;
+            font-size: 40px;
+          }
+
+          .title-center {
+            text-align: center;
+          }
+        }
+
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="preload" as="style" onload="this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet"></noscript>
+    <link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></noscript>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="css/style.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/style.css"></noscript>
+    <script>!function(e){"use strict";var t=function(t,n,r){function o(e){return i.body?e():void setTimeout(function(){o(e)})}function a(){d.addEventListener&&d.removeEventListener("load",a),d.media=r||"all"}var l,i=e.document,d=i.createElement("link");if(n)l=n;else{var s=(i.body||i.getElementsByTagName("head")[0]).childNodes;l=s[s.length-1]}var u=i.styleSheets;d.rel="stylesheet",d.href=t,d.media="only x",o(function(){l.parentNode.insertBefore(d,n?l:l.nextSibling)});var f=function(e){for(var t=d.href,n=u.length;n--;)if(u[n].href===t)return e();setTimeout(function(){f(e)})};return d.addEventListener&&d.addEventListener("load",a),d.onloadcssdefined=f,f(a),d};"undefined"!=typeof exports?exports.loadCSS=t:e.loadCSS=t}("undefined"!=typeof global?global:this),function(e){if(e.loadCSS){var t=loadCSS.relpreload={};if(t.support=function(){try{return e.document.createElement("link").relList.supports("preload")}catch(e){return!1}},t.poly=function(){for(var t=e.document.getElementsByTagName("link"),n=0;n<t.length;n++){var r=t[n];"preload"===r.rel&&"style"===r.getAttribute("as")&&(e.loadCSS(r.href,r),r.rel=null)}},!t.support()){t.poly();var n=e.setInterval(t.poly,300);e.addEventListener&&e.addEventListener("load",function(){e.clearInterval(n)}),e.attachEvent&&e.attachEvent("onload",function(){e.clearInterval(n)})}}}(this);</script>
 </head>
 <body>
     <div class="container">
@@ -64,10 +541,8 @@
                     <figure>
                         <a href="#project-1" data-toggle="modal">
                             <picture>
-                                <source media="(min-width:991px)"
-                                        srcset="images/Avenue-800_2x.jpg 2x, images/Avenue-800_1x.jpg">
-                                <source media="(min-width:550px) and (max-width:990px)"
-                                        srcset="images/Avenue-1300_2x.jpg 2x, images/Avenue-1300_1x.jpg">
+                                <source media="(min-width:991px)" srcset="images/Avenue-800_2x.jpg 2x, images/Avenue-800_1x.jpg">
+                                <source media="(min-width:550px) and (max-width:990px)" srcset="images/Avenue-1300_2x.jpg 2x, images/Avenue-1300_1x.jpg">
                                 <img class="img-responsive img-thumbnail" src="images/Avenue-800_1x.jpg" alt="Multi-User Blog Screenshot">
                             </picture>
                         </a>
@@ -82,10 +557,8 @@
                     <figure>
                         <a href="#project-2" data-toggle="modal">
                             <picture>
-                                <source media="(min-width:550px) and (max-width:990px)"
-                                        srcset="images/git-tip-cli-1300_2x.jpg 2x, images/git-tip-cli-1300_1x.jpg">
-                                <source media="(min-width:991px)"
-                                        srcset="images/git-tip-cli-800_2x.jpg 2x, images/git-tip-cli-800_1x.jpg">
+                                <source media="(min-width:550px) and (max-width:990px)" srcset="images/git-tip-cli-1300_2x.jpg 2x, images/git-tip-cli-1300_1x.jpg">
+                                <source media="(min-width:991px)" srcset="images/git-tip-cli-800_2x.jpg 2x, images/git-tip-cli-800_1x.jpg">
                                 <img class="img-responsive img-thumbnail" src="images/git-tip-cli-800_2x.jpg" alt="Git-Tip CLI Screenshot">
                             </picture>
                         </a>
@@ -100,10 +573,8 @@
                     <figure>
                         <a href="#project-3" data-toggle="modal">
                             <picture>
-                                <source media="(min-width:550px) and (max-width:990px)"
-                                        srcset="images/ParkingWebApp-1300_2x.jpg 2x, images/ParkingWebApp-1300_1x.jpg">
-                                <source media="(min-width:991px)"
-                                        srcset="images/ParkingWebApp-800_2x.jpg 2x, images/ParkingWebApp-800_1x.jpg">
+                                <source media="(min-width:550px) and (max-width:990px)" srcset="images/ParkingWebApp-1300_2x.jpg 2x, images/ParkingWebApp-1300_1x.jpg">
+                                <source media="(min-width:991px)" srcset="images/ParkingWebApp-800_2x.jpg 2x, images/ParkingWebApp-800_1x.jpg">
                                 <img class="img-responsive img-thumbnail" src="images/ParkingWebApp-800_2x.jpg" alt="Parking Capacity Management Webapp Screenshot">
                             </picture>
                         </a>
@@ -118,10 +589,8 @@
                     <figure>
                         <a href="#project-4" data-toggle="modal">
                             <picture>
-                                <source media="(min-width:550px) and (max-width:990px)"
-                                        srcset="images/Thoughts-1300_2x.jpg 2x, images/Thoughts-1300_1x.jpg">
-                                <source media="(min-width:991px)"
-                                        srcset="images/Thoughts-800_2x.jpg 2x, images/Thoughts-800_1x.jpg">
+                                <source media="(min-width:550px) and (max-width:990px)" srcset="images/Thoughts-1300_2x.jpg 2x, images/Thoughts-1300_1x.jpg">
+                                <source media="(min-width:991px)" srcset="images/Thoughts-800_2x.jpg 2x, images/Thoughts-800_1x.jpg">
                                 <img class="img-responsive img-thumbnail" src="images/Thoughts-800_2x.jpg" alt="Thought-of-the-day Chrome Extension Screenshot">
                             </picture>
                         </a>
@@ -136,10 +605,8 @@
                     <figure>
                         <a href="#project-5" data-toggle="modal">
                             <picture>
-                                <source media="(min-width:550px) and (max-width:990px)"
-                                        srcset="images/MovieTrailer-1300_2x.jpg 2x, images/MovieTrailer-1300_1x.jpg">
-                                <source media="(min-width:991px)"
-                                        srcset="images/MovieTrailer-800_2x.jpg 2x, images/MovieTrailer-800_1x.jpg">
+                                <source media="(min-width:550px) and (max-width:990px)" srcset="images/MovieTrailer-1300_2x.jpg 2x, images/MovieTrailer-1300_1x.jpg">
+                                <source media="(min-width:991px)" srcset="images/MovieTrailer-800_2x.jpg 2x, images/MovieTrailer-800_1x.jpg">
                                 <img class="img-responsive img-thumbnail" src="images/MovieTrailer-800_2x.jpg" alt="Movie Trailer Website Screenshot">
                             </picture>
                         </a>
@@ -154,10 +621,8 @@
                     <figure>
                         <a href="#project-6" data-toggle="modal">
                             <picture>
-                                <source media="(min-width:550px) and (max-width:990px)"
-                                        srcset="images/C-Cube-1300_2x.jpg 2x, images/C-Cube-1300_1x.jpg">
-                                <source media="(min-width:991px)"
-                                        srcset="images/C-Cube-800_2x.jpg 2x, images/C-Cube-800_1x.jpg">
+                                <source media="(min-width:550px) and (max-width:990px)" srcset="images/C-Cube-1300_2x.jpg 2x, images/C-Cube-1300_1x.jpg">
+                                <source media="(min-width:991px)" srcset="images/C-Cube-800_2x.jpg 2x, images/C-Cube-800_1x.jpg">
                                 <img class="img-responsive img-thumbnail" src="images/C-Cube-800_2x.jpg" alt="C-CubeClub Screenshot">
                             </picture>
                         </a>
