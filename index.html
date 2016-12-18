@@ -13,21 +13,23 @@
 </head>
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-lg-6">
-                <img class="img-responsive title-logo" src="Images/ninja.svg" alt="Udacity Logo">
+        <header>
+            <div class="row">
+                <div class="col-md-6 col-lg-6">
+                    <img class="img-responsive title-logo" src="images/fixed/ninja.svg" alt="Udacity Logo">
+                </div>
+                <div class="col-md-6 col-lg-6 text-uppercase title-center">
+                    <h1 class="text-thin title-main">NIRAJ PANDKAR</h1>
+                    <h4>Front-end Ninja</h4>
+                </div>
             </div>
-            <div class="col-md-6 col-lg-6 text-uppercase title-center">
-                <h1 class="text-thin title-main">NIRAJ PANDKAR</h1>
-                <h4>Front-end Ninja</h4>
-            </div>
-        </div>
+        </header>
 
         <hr> <!-- Visually attractive horizontal line-->
 
         <div class="row">    <!-- About me section-->
             <div class="col-md-6">
-                <img class="img-responsive profile-picture" src="Images/user.svg" alt="Udacity Logo">
+                <img class="img-responsive profile-picture" src="images/fixed/user.svg" alt="Udacity Logo">
             </div>
             <div class="col-md-6">
                 <h2 class="text-muted sub-title">About Me</h2>
@@ -45,95 +47,117 @@
         </div>
 
         <!--Down arrow button transition-->
-        <div class="row">
-            <div class="col-md-12">
-                <a href="#featured"><img class="img-responsive" src="Images/down-button.svg" style="height:100px;width:100px;margin:auto" alt="Udacity Logo"></a>
-            </div>
-        </div>
+        <!--<div class="row">-->
+            <!--<div class="col-md-12">-->
+                <!--<a href="#featured"><img class="img-responsive" src="images/fixed/down-button.svg" style="height:100px;width:100px;margin:auto" alt="Udacity Logo"></a>-->
+            <!--</div>-->
+        <!--</div>-->
 
-        <!-- Projects-->
-        <div id="section-2" class="row">
+
+        <div class="row">
             <div class="col-md-12">
                 <h2 id="featured" class="text-muted sub-title">Featured Work</h2>
             </div>
         </div>
 
-        <div class="row text-center">
-            <div class="col-lg-4 col-md-6 project-center">
-                <figure>
-                    <a href="#project-1" data-toggle="modal">
-                        <img class="img-responsive img-thumbnail" src="Images/Avenue.png" alt="Multi-User Blog Screenshot">
-                    </a>
-                    <figcaption>
-                        <h3 class="text-uppercase text-thick">Multi-User Blog</h3>
-                        <a href="https://github.com/nirajpandkar/multiuser-blog" class="btn btn-primary">View Source Code</a>
-                    </figcaption>
-                </figure>
-            </div>
+        <!-- Projects-->
+        <section id="projects">
+            <div class="row text-center">
+                <div class="col-lg-4 col-md-6 project-center">
+                    <figure>
+                        <a href="#project-1" data-toggle="modal">
+                            <picture>
+                                <source srcset="images/Avenue-800_2x.jpg 2x, images/Avenue-800_1x.jpg">
+                                <img class="img-responsive img-thumbnail" src="images/Avenue-800_2x.jpg" alt="Multi-User Blog Screenshot">
+                            </picture>
+                        </a>
+                        <figcaption>
+                            <h3 class="text-uppercase text-thick">Multi-User Blog</h3>
+                            <a href="https://github.com/nirajpandkar/multiuser-blog" class="btn btn-primary">View Source Code</a>
+                        </figcaption>
+                    </figure>
+                </div>
 
-            <div class="col-lg-4 col-md-6 project-center">
-                <figure>
-                    <a href="#project-2" data-toggle="modal">
-                        <img class="img-responsive img-thumbnail" src="Images/git-tip-cli.png" alt="Git-Tip CLI Screenshot">
-                    </a>
-                    <figcaption>
-                        <h3 class="text-uppercase text-thick">Git-Tip CLI</h3>
-                        <a href="https://github.com/nirajpandkar/git-tip" class="btn btn-primary">View Source Code</a>
-                    </figcaption>
-                </figure>
-            </div>
+                <div class="col-lg-4 col-md-6 project-center">
+                    <figure>
+                        <a href="#project-2" data-toggle="modal">
+                            <picture>
+                                <source srcset="images/git-tip-cli-800_2x.jpg 2x, images/git-tip-cli-800_1x.jpg">
+                                <img class="img-responsive img-thumbnail" src="images/git-tip-cli-800_2x.jpg" alt="Git-Tip CLI Screenshot">
+                            </picture>
+                        </a>
+                        <figcaption>
+                            <h3 class="text-uppercase text-thick">Git-Tip CLI</h3>
+                            <a href="https://github.com/nirajpandkar/git-tip" class="btn btn-primary">View Source Code</a>
+                        </figcaption>
+                    </figure>
+                </div>
 
-            <div class="col-lg-4 col-md-6 project-center">
-                <figure>
-                    <a href="#project-3" data-toggle="modal">
-                        <img class="img-responsive img-thumbnail" src="Images/ParkingWebApp.png" alt="Parking Capacity Management Webapp Screenshot">
-                    </a>
-                    <figcaption>
-                        <h3 class="text-uppercase text-thick">Parking Capacity Management Web-App</h3>
-                        <a href="https://github.com/nirajpandkar/InfyTechZooka-2-parking-webapp" class="btn btn-primary">View Source Code</a>
-                    </figcaption>
-                </figure>
-            </div>
+                <div class="col-lg-4 col-md-6 project-center">
+                    <figure>
+                        <a href="#project-3" data-toggle="modal">
+                            <picture>
+                                <source srcset="images/ParkingWebApp-800_2x.jpg 2x, images/ParkingWebApp-800_1x.jpg">
+                                <img class="img-responsive img-thumbnail" src="images/ParkingWebApp-800_2x.jpg" alt="Parking Capacity Management Webapp Screenshot">
+                            </picture>
+                        </a>
+                        <figcaption>
+                            <h3 class="text-uppercase text-thick">Parking Capacity Management Web-App</h3>
+                            <a href="https://github.com/nirajpandkar/InfyTechZooka-2-parking-webapp" class="btn btn-primary">View Source Code</a>
+                        </figcaption>
+                    </figure>
+                </div>
 
-            <div class="col-lg-4 col-md-6 project-center">
-                <figure>
-                    <a href="#project-4" data-toggle="modal">
-                        <img class="img-responsive img-thumbnail" src="Images/Thoughts.png" alt="Thought-of-the-day Chrome Extension Screenshot">
-                    </a>
-                    <figcaption>
-                        <h3 class="text-uppercase text-thick">Thought-of-the-day Chrome Extension</h3>
-                        <a href="https://github.com/nirajpandkar/thoughts-chrome-extension" class="btn btn-primary">View Source Code</a>
-                    </figcaption>
-                </figure>
-            </div>
+                <div class="col-lg-4 col-md-6 project-center">
+                    <figure>
+                        <a href="#project-4" data-toggle="modal">
+                            <picture>
+                                <source srcset="images/Thoughts-800_2x.jpg 2x, images/Thoughts-800_1x.jpg">
+                                <img class="img-responsive img-thumbnail" src="images/Thoughts-800_2x.jpg" alt="Thought-of-the-day Chrome Extension Screenshot">
+                            </picture>
+                        </a>
+                        <figcaption>
+                            <h3 class="text-uppercase text-thick">Thought-of-the-day Chrome Extension</h3>
+                            <a href="https://github.com/nirajpandkar/thoughts-chrome-extension" class="btn btn-primary">View Source Code</a>
+                        </figcaption>
+                    </figure>
+                </div>
 
-            <div class="col-lg-4 col-md-6 project-center">
-                <figure>
-                    <a href="#project-5" data-toggle="modal">
-                        <img class="img-responsive img-thumbnail" src="Images/MovieTrailer.png" alt="Movie Trailer Website Screenshot">
-                    </a>
-                    <figcaption>
-                        <h3 class="text-uppercase text-thick">Movie Trailer Website</h3>
-                        <a href="https://github.com/nirajpandkar/MovieTrailerWebsite" class="btn btn-primary">View Source Code</a>
-                    </figcaption>
-                </figure>
-            </div>
+                <div class="col-lg-4 col-md-6 project-center">
+                    <figure>
+                        <a href="#project-5" data-toggle="modal">
+                            <picture>
+                                <source srcset="images/MovieTrailer-800_2x.jpg 2x, images/MovieTrailer-800_1x.jpg">
+                                <img class="img-responsive img-thumbnail" src="images/MovieTrailer-800_2x.jpg" alt="Movie Trailer Website Screenshot">
+                            </picture>
+                        </a>
+                        <figcaption>
+                            <h3 class="text-uppercase text-thick">Movie Trailer Website</h3>
+                            <a href="https://github.com/nirajpandkar/MovieTrailerWebsite" class="btn btn-primary">View Source Code</a>
+                        </figcaption>
+                    </figure>
+                </div>
 
-            <div class="col-lg-4 col-md-6 project-center">
-                <figure>
-                    <a href="#project-6" data-toggle="modal">
-                        <img class="img-responsive img-thumbnail" src="Images/C-Cube.png" alt="C-CubeClub Screenshot">
-                    </a>
-                    <figcaption>
-                        <h3 class="text-uppercase text-thick">C-CubeClub</h3>
-                        <a href="https://github.com/nirajpandkar/CCube" class="btn btn-primary">View Source Code</a>
-                    </figcaption>
-                </figure>
+                <div class="col-lg-4 col-md-6 project-center">
+                    <figure>
+                        <a href="#project-6" data-toggle="modal">
+                            <picture>
+                                <source srcset="images/C-Cube-800_2x.jpg 2x, images/C-Cube-800_1x.jpg">
+                                <img class="img-responsive img-thumbnail" src="images/C-Cube-800_2x.jpg" alt="C-CubeClub Screenshot">
+                            </picture>
+                        </a>
+                        <figcaption>
+                            <h3 class="text-uppercase text-thick">C-CubeClub</h3>
+                            <a href="https://github.com/nirajpandkar/CCube" class="btn btn-primary">View Source Code</a>
+                        </figcaption>
+                    </figure>
+                </div>
             </div>
-        </div>
+        </section>
+
 
         <!-- Modals -->
-        <div id="Modals">
+        <section id="modals">
             <div id="project-1" class="modal fade" role="dialog">
                 <div class="modal-dialog">
                     <!-- Modal content-->
@@ -144,19 +168,23 @@
                         </div>
                         <div class="modal-body">
                             <figure>
-                                <img class="img-responsive img-thumbnail" src="Images/Avenue.png" alt="Multi-User Blog Screenshot">                                <figcaption class="text-center">
-                                    <p><b>What I learnt:</b>Python PEP8 standard, Jinja templating, User Authentication, DB Handling, Security</p>
+                                <picture>
+                                    <source srcset="images/Avenue-1300_2x.jpg 2x, images/Avenue-1300_1x.jpg">
+                                    <img class="img-responsive img-thumbnail" src="images/Avenue-1300_2x.jpg" alt="Multi-User Blog Screenshot">
+                                </picture>
+                                <figcaption class="text-center">
+                                    <p><b>- What I learnt -</b><br>Python PEP8 standard, Jinja templating, User Authentication, DB Handling, Security</p>
                                 </figcaption>
                             </figure>
                         </div>
                         <div class="modal-footer">
                             <p class="text-center">Blogging Web-App with multi-user posts.</p>
-                            <button class="btn-primary">View Source Code</button>
                         </div>
                     </div>
 
                 </div>
             </div>
+
             <div id="project-2" class="modal fade" role="dialog">
                 <div class="modal-dialog">
                     <!-- Modal content-->
@@ -167,9 +195,13 @@
                         </div>
                         <div class="modal-body">
                             <figure>
-                                <img class="img-responsive img-thumbnail" src="Images/git-tip-cli.png" alt="Git-Tip CLI Screenshot">                                <figcaption class="text-center">
-                                <p><b>What I learnt:</b>Javascript interfacing for shell/terminal, Distribution with NPM</p>
-                            </figcaption>
+                                <picture>
+                                    <source srcset="images/git-tip-cli-1300_2x.jpg 2x, images/git-tip-cli-1300_1x.jpg">
+                                    <img class="img-responsive img-thumbnail" src="images/git-tip-cli-1300_2x.jpg" alt="Git-Tip CLI Screenshot">
+                                </picture>
+                                <figcaption class="text-center">
+                                    <p><b>- What I learnt -</b><br>Javascript interfacing for shell/terminal, Distribution with NPM</p>
+                                </figcaption>
                             </figure>
                         </div>
                         <div class="modal-footer">
@@ -179,6 +211,7 @@
 
                 </div>
             </div>
+
             <div id="project-3" class="modal fade" role="dialog">
                 <div class="modal-dialog">
                     <!-- Modal content-->
@@ -189,8 +222,12 @@
                         </div>
                         <div class="modal-body">
                             <figure>
-                                <img class="img-responsive img-thumbnail" src="Images/ParkingWebApp.png" alt="Parking Capacity Management Webapp Screenshot">                                <figcaption class="text-center">
-                                <p><b>What I learnt:</b>Firebase real time database, Semantic UI frontend, Jquery, Integration with sensors</p>
+                                <picture>
+                                    <source srcset="images/ParkingWebApp-1300_2x.jpg 2x, images/ParkingWebApp-1300_1x.jpg">
+                                    <img class="img-responsive img-thumbnail" src="images/ParkingWebApp-1300_2x.jpg" alt="Parking Capacity Management Webapp Screenshot">
+                                </picture>
+                                <figcaption class="text-center">
+                                <p><b>- What I learnt -</b><br>Firebase real time database, Semantic UI frontend, Jquery, Integration with sensors</p>
                             </figcaption>
                             </figure>
                         </div>
@@ -201,6 +238,7 @@
 
                 </div>
             </div>
+
             <div id="project-4" class="modal fade" role="dialog">
                 <div class="modal-dialog">
                     <!-- Modal content-->
@@ -211,8 +249,12 @@
                         </div>
                         <div class="modal-body">
                             <figure>
-                                <img class="img-responsive img-thumbnail" src="Images/Thoughts.png" alt="Thought-of-the-day Chrome Extension Screenshot">                                <figcaption class="text-center">
-                                <p><b>What I learnt:</b>Continuous Integration, Git, Explored chrome capabilities extensively</p>
+                                <picture>
+                                    <source srcset="images/Thoughts-1300_2x.jpg 2x, images/Thoughts-1300_1x.jpg">
+                                    <img class="img-responsive img-thumbnail" src="images/Thoughts-1300_2x.jpg" alt="Thought-of-the-day Chrome Extension Screenshot">
+                                </picture>
+                                <figcaption class="text-center">
+                                <p><b>- What I learnt -</b><br>Continuous Integration, Git, Explored chrome capabilities extensively</p>
                             </figcaption>
                             </figure>
                         </div>
@@ -223,6 +265,7 @@
 
                 </div>
             </div>
+
             <div id="project-5" class="modal fade" role="dialog">
                 <div class="modal-dialog">
                     <!-- Modal content-->
@@ -233,8 +276,12 @@
                         </div>
                         <div class="modal-body">
                             <figure>
-                                <img class="img-responsive img-thumbnail" src="Images/MovieTrailer.png" alt="Movie Trailer Website Screenshot">                                <figcaption class="text-center">
-                                <p><b>What I learnt:</b>Python PEP8 standard, Applying CSS3 animations, API usage</p>
+                                <picture>
+                                    <source srcset="images/MovieTrailer-1300_2x.jpg 2x, images/MovieTrailer-1300_1x.jpg">
+                                    <img class="img-responsive img-thumbnail" src="images/MovieTrailer-1300_2x.jpg" alt="Movie Trailer Website Screenshot">
+                                </picture>
+                                <figcaption class="text-center">
+                                <p><b>- What I learnt -</b><br>Python PEP8 standard, Applying CSS3 animations, API usage</p>
                             </figcaption>
                             </figure>
                         </div>
@@ -245,6 +292,7 @@
 
                 </div>
             </div>
+
             <div id="project-6" class="modal fade" role="dialog">
                 <div class="modal-dialog">
                     <!-- Modal content-->
@@ -255,9 +303,12 @@
                         </div>
                         <div class="modal-body">
                             <figure>
-                                <img class="img-responsive img-thumbnail" src="Images/C-Cube.png" alt="C-CubeClub Screenshot">
+                                <picture>
+                                    <source srcset="images/C-Cube-1300_2x.jpg 2x, images/C-Cube-1300_1x.jpg">
+                                    <img class="img-responsive img-thumbnail" src="images/C-Cube-1300_2x.jpg" alt="C-CubeClub Screenshot">
+                                </picture>
                                 <figcaption class="text-center">
-                                    <p><b>What I learnt:</b>HTML,CSS</p>
+                                    <p><b>- What I learnt -</b><br>HTML,CSS</p>
                                 </figcaption>
                             </figure>
                         </div>
@@ -267,7 +318,31 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <footer>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-muted sub-title">Contact</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 text-center">
+                    <a href="https://github.com/nirajpandkar"><img class="social-icons contact-div" src="images/fixed/github.svg"></a>
+                </div>
+
+                <div class="col-lg-4 col-md-6 text-center">
+                    <a href="https://www.linkedin.com/in/niraj-pandkar-42286b111/">
+                        <img class="social-icons contact-div" src="images/fixed/linkedin-logo-button.svg">
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-md-6 text-center">
+                    <a href="https://plus.google.com/110774887592904531891"><img class="social-icons contact-div" src="images/fixed/googleplus-logo.svg"></a>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
