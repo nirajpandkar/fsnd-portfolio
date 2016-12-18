@@ -2,7 +2,7 @@
 
 > A front-end project for FSND Udacity.
 
-You can visit the portfolio here - [nirajpandkar.github.io](nirajpandkar.github.io)
+You can visit the portfolio here - [nirajpandkar.github.io](https://nirajpandkar.github.io/)
 
 ## Features
 
