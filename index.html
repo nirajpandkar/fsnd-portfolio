@@ -13,10 +13,12 @@
 </head>
 <body>
     <div class="container">
+
+        <!-- Header with Name and Ninja-->
         <header>
             <div class="row">
                 <div class="col-md-6 col-lg-6">
-                    <img class="img-responsive title-logo" src="images/fixed/ninja.svg" alt="Udacity Logo">
+                    <img class="img-responsive title-logo" src="images/images_src/fixed/ninja.svg" alt="Udacity Logo">
                 </div>
                 <div class="col-md-6 col-lg-6 text-uppercase title-center">
                     <h1 class="text-thin title-main">NIRAJ PANDKAR</h1>
@@ -25,11 +27,15 @@
             </div>
         </header>
 
+        <!-- /Header with Name and Ninja-->
+
+
         <hr> <!-- Visually attractive horizontal line-->
 
-        <div class="row">    <!-- About me section-->
+        <!-- About me section -->
+        <div class="row">
             <div class="col-md-6">
-                <img class="img-responsive profile-picture" src="images/fixed/user.svg" alt="Udacity Logo">
+                <img class="img-responsive profile-picture" src="images/images_src/fixed/user.svg" alt="Udacity Logo">
             </div>
             <div class="col-md-6">
                 <h2 class="text-muted sub-title">About Me</h2>
@@ -45,14 +51,7 @@
             </div>
 
         </div>
-
-        <!--Down arrow button transition-->
-        <!--<div class="row">-->
-            <!--<div class="col-md-12">-->
-                <!--<a href="#featured"><img class="img-responsive" src="images/fixed/down-button.svg" style="height:100px;width:100px;margin:auto" alt="Udacity Logo"></a>-->
-            <!--</div>-->
-        <!--</div>-->
-
+        <!-- /About me section -->
 
         <div class="row">
             <div class="col-md-12">
@@ -60,15 +59,18 @@
             </div>
         </div>
 
-        <!-- Projects-->
+        <!-- Featured Projects Section-->
         <section id="projects">
             <div class="row text-center">
                 <div class="col-lg-4 col-md-6 project-center">
                     <figure>
                         <a href="#project-1" data-toggle="modal">
                             <picture>
-                                <source srcset="images/Avenue-800_2x.jpg 2x, images/Avenue-800_1x.jpg">
-                                <img class="img-responsive img-thumbnail" src="images/Avenue-800_2x.jpg" alt="Multi-User Blog Screenshot">
+                                <source media="(min-width:991px)"
+                                        srcset="images/Avenue-800_2x.jpg 2x, images/Avenue-800_1x.jpg">
+                                <source media="(min-width:550px) and (max-width:990px)"
+                                        srcset="images/Avenue-1300_2x.jpg 2x, images/Avenue-1300_1x.jpg">
+                                <img class="img-responsive img-thumbnail" src="images/Avenue-800_1x.jpg" alt="Multi-User Blog Screenshot">
                             </picture>
                         </a>
                         <figcaption>
@@ -82,7 +84,10 @@
                     <figure>
                         <a href="#project-2" data-toggle="modal">
                             <picture>
-                                <source srcset="images/git-tip-cli-800_2x.jpg 2x, images/git-tip-cli-800_1x.jpg">
+                                <source media="(min-width:550px) and (max-width:990px)"
+                                        srcset="images/git-tip-cli-1300_2x.jpg 2x, images/git-tip-cli-1300_1x.jpg">
+                                <source media="(min-width:991px)"
+                                        srcset="images/git-tip-cli-800_2x.jpg 2x, images/git-tip-cli-800_1x.jpg">
                                 <img class="img-responsive img-thumbnail" src="images/git-tip-cli-800_2x.jpg" alt="Git-Tip CLI Screenshot">
                             </picture>
                         </a>
@@ -97,7 +102,10 @@
                     <figure>
                         <a href="#project-3" data-toggle="modal">
                             <picture>
-                                <source srcset="images/ParkingWebApp-800_2x.jpg 2x, images/ParkingWebApp-800_1x.jpg">
+                                <source media="(min-width:550px) and (max-width:990px)"
+                                        srcset="images/ParkingWebApp-1300_2x.jpg 2x, images/ParkingWebApp-1300_1x.jpg">
+                                <source media="(min-width:991px)"
+                                        srcset="images/ParkingWebApp-800_2x.jpg 2x, images/ParkingWebApp-800_1x.jpg">
                                 <img class="img-responsive img-thumbnail" src="images/ParkingWebApp-800_2x.jpg" alt="Parking Capacity Management Webapp Screenshot">
                             </picture>
                         </a>
@@ -112,7 +120,10 @@
                     <figure>
                         <a href="#project-4" data-toggle="modal">
                             <picture>
-                                <source srcset="images/Thoughts-800_2x.jpg 2x, images/Thoughts-800_1x.jpg">
+                                <source media="(min-width:550px) and (max-width:990px)"
+                                        srcset="images/Thoughts-1300_2x.jpg 2x, images/Thoughts-1300_1x.jpg">
+                                <source media="(min-width:991px)"
+                                        srcset="images/Thoughts-800_2x.jpg 2x, images/Thoughts-800_1x.jpg">
                                 <img class="img-responsive img-thumbnail" src="images/Thoughts-800_2x.jpg" alt="Thought-of-the-day Chrome Extension Screenshot">
                             </picture>
                         </a>
@@ -127,7 +138,10 @@
                     <figure>
                         <a href="#project-5" data-toggle="modal">
                             <picture>
-                                <source srcset="images/MovieTrailer-800_2x.jpg 2x, images/MovieTrailer-800_1x.jpg">
+                                <source media="(min-width:550px) and (max-width:990px)"
+                                        srcset="images/MovieTrailer-1300_2x.jpg 2x, images/MovieTrailer-1300_1x.jpg">
+                                <source media="(min-width:991px)"
+                                        srcset="images/MovieTrailer-800_2x.jpg 2x, images/MovieTrailer-800_1x.jpg">
                                 <img class="img-responsive img-thumbnail" src="images/MovieTrailer-800_2x.jpg" alt="Movie Trailer Website Screenshot">
                             </picture>
                         </a>
@@ -142,7 +156,10 @@
                     <figure>
                         <a href="#project-6" data-toggle="modal">
                             <picture>
-                                <source srcset="images/C-Cube-800_2x.jpg 2x, images/C-Cube-800_1x.jpg">
+                                <source media="(min-width:550px) and (max-width:990px)"
+                                        srcset="images/C-Cube-1300_2x.jpg 2x, images/C-Cube-1300_1x.jpg">
+                                <source media="(min-width:991px)"
+                                        srcset="images/C-Cube-800_2x.jpg 2x, images/C-Cube-800_1x.jpg">
                                 <img class="img-responsive img-thumbnail" src="images/C-Cube-800_2x.jpg" alt="C-CubeClub Screenshot">
                             </picture>
                         </a>
@@ -154,7 +171,7 @@
                 </div>
             </div>
         </section>
-
+        <!-- /Featured Projects Section-->
 
         <!-- Modals -->
         <section id="modals">
@@ -319,7 +336,9 @@
                 </div>
             </div>
         </section>
+        <!-- /Modals -->
 
+        <!-- Social Plugins-->
         <footer>
             <div class="row">
                 <div class="col-md-12">
@@ -328,21 +347,23 @@
             </div>
 
             <div class="row">
-                <div class="col-lg-4 col-md-6 text-center">
-                    <a href="https://github.com/nirajpandkar"><img class="social-icons contact-div" src="images/fixed/github.svg"></a>
+                <div class="col-lg-4 col-md-4 col-sm-4 col text-center">
+                    <a href="https://github.com/nirajpandkar"><img class="social-icons contact-div" src="images/images_src/fixed/github.svg"></a>
                 </div>
 
-                <div class="col-lg-4 col-md-6 text-center">
+                <div class="col-lg-4 col-md-4 col-sm-4 text-center">
                     <a href="https://www.linkedin.com/in/niraj-pandkar-42286b111/">
-                        <img class="social-icons contact-div" src="images/fixed/linkedin-logo-button.svg">
+                        <img class="social-icons contact-div" src="images/images_src/fixed/linkedin-logo-button.svg">
                     </a>
                 </div>
 
-                <div class="col-lg-4 col-md-6 text-center">
-                    <a href="https://plus.google.com/110774887592904531891"><img class="social-icons contact-div" src="images/fixed/googleplus-logo.svg"></a>
+                <div class="col-lg-4 col-md-4 col-sm-4 text-center">
+                    <a href="https://plus.google.com/110774887592904531891"><img class="social-icons contact-div" src="images/images_src/fixed/googleplus-logo.svg"></a>
                 </div>
             </div>
         </footer>
+        <!-- /Social Plugins-->
+
     </div>
 </body>
 </html>
