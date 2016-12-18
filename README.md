@@ -26,3 +26,9 @@ To improve performance, PageSpeed Insights suggests to inline CSS with `<style>`
 It drastically increases the performance(to 90 from 82 out of 100 on desktop and 87 from 66 out of 100 on mobile) but **inline styles are not allowed** according to **rubric**
 
 I have tried that on a different branch for reference - [gh-pages](https://github.com/nirajpandkar/nirajpandkar.github.io/tree/gh-pages)
+
+Refer to this discussion thread on the forum - https://discussions.udacity.com/t/pagespeed-improving-the-score/204164
+## Resources 
+
+* [Bootstrap](http://getbootstrap.com/)
+* [FlatIcons](http://www.flaticon.com/)
