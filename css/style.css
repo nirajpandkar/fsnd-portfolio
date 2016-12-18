@@ -1,91 +1,91 @@
-body{
+body {
     font-family: 'Lato', sans-serif;
     color: #2d3c49;
-    font-weight:300;
+    font-weight: 300;
 }
 
-hr{
-    border:none;
-    background-color:#7d97ad;
-    height:4px;
+hr {
+    border: none;
+    background-color: #7d97ad;
+    height: 4px;
 }
 
-p{
-    font-size:25px;
+p {
+    font-size: 25px;
 
 }
-.text-muted{
+
+.text-muted {
     color: #7d97ad;
 }
 
-.text-thin{
-    font-weight:100;
+.text-thin {
+    font-weight: 100;
 }
 
-.title-main{
-    font-size:60px;
+.title-main {
+    font-size: 60px;
 }
 
-.title-logo{
-    margin-top:20px;
-    width:25%;
-    height:25%;
+.title-logo {
+    margin: 20px 0 0 0;
+    width: 25%;
+    height: 25%;
 }
 
-.goodFonts{
-    line-height:1.5em;
-    font-size:18px;
+.goodFonts {
+    line-height: 1.5em;
+    font-size: 18px;
 }
 
-.profile-picture{
-    width:65%;
-    height:65%;
-    margin:auto;
+.profile-picture {
+    width: 65%;
+    height: 65%;
+    margin: auto;
 }
 
-.sub-title{
+.sub-title {
     font-size: 50px;
-    margin-top:85px;
+    margin: 85px 0 0 0;
 }
 
-.project-center{
-    margin-top:60px;
+.project-center {
+    margin: 60px 0 0 0;
 }
 
-.social-icons{
-    height:30%;
-    width:30%;
+.social-icons {
+    height: 30%;
+    width: 30%;
 }
 
-.contact-div{
-    margin-top:30px;
-    margin-bottom:30px;
+.contact-div {
+    margin: 30px 0 30px 0;
 }
 
-@media screen and (min-width: 445px) and (max-width: 990px){
-
+@media screen and (min-width: 445px) and (max-width: 990px) {
     .social-icons{
         width:20%;
         height:20%;
     }
 }
 
-@media screen and (min-width: 990px){
+@media screen and (min-width: 990px) {
     .title-center{
         text-align:right;
     }
 }
-@media screen and (min-width: 300px) and (max-width: 991px){
+
+@media screen and (min-width: 300px) and (max-width: 991px) {
     .title-logo{
         margin:auto;
     }
 
     .sub-title{
         text-align:center;
-        font-size:40px
+        font-size:40px;
     }
 
     .title-center{
-        text-align:center
+        text-align:center;
     }
 }
